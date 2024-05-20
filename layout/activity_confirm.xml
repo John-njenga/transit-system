@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbg"
+    tools:context=".ConfirmActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="60dp"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:text="Passenger Information"
+            android:textStyle="bold|italic"/>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="#2F1033"
+            android:textSize="25dp" />
+
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Enter phone number"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#2F1033"
+            android:inputType="phone"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#2196F3"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:text="* Your tickets will be sent to this contact.Note that this bus operator accepts m-ticket."
+            android:textSize="20dp" />
+
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Primary Passenger" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textColorHint="#2F1033"
+            android:hint="Name"
+            android:textSize="25dp"
+            />
+
+
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="421dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="Age"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#2F1033"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="#2196F3"
+            android:drawableLeft="@drawable/ic_launchermpesa_foreground1"
+            android:drawablePadding="@dimen/cardview_default_radius"
+            android:text="Proceed to Payment"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

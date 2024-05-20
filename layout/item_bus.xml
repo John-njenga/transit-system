@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="172dp"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp">
+
+
+        <TextView
+            android:id="@+id/textViewLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CarRegtxt"
+            android:layout_marginLeft="5dp"
+            android:text="Route:"
+            android:textColor="#E41304"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewLabel1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0.5dp"
+            android:text="To:"
+            android:textColor="#E41304"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewLabel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewLabel2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:text="From:"
+            android:textColor="#E41304"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewLabel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewLabel3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:text="Price:"
+            android:textColor="#E41304"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/CarRegtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="2dp"
+            android:text="CarRegNo"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/CarRoutetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CarRegtxt"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textViewLabel1"
+            android:text="CarRoute"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/Destinationtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CarRoutetxt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2.8dp"
+            android:layout_toRightOf="@+id/textViewLabel2"
+            android:text="Destination"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/Departuretxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Destinationtxt"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="62dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2.7dp"
+            android:layout_toRightOf="@+id/textViewLabel3"
+            android:text="Departure"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/Pricetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Departuretxt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/textViewLabel3"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/Pricetxt"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnbook"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#6F0381"
+                android:textColor="@color/white"
+                android:text="Book Now" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
